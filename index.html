@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Monitoring App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Patient Monitoring Application</h1>
+        <div>
+            <h2>Choose Your Role</h2>
+            <button onclick="showRegistration('patient')">I am a Patient</button>
+            <button onclick="showRegistration('doctor')">I am a Doctor</button>
+        </div>
+        
+        <div id="registration" style="display: none;">
+            <h2>Registration</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <input type="text" id="role" placeholder="Role (patient/doctor)">
+            <button id="registerButton">Register</button>
+        </div>
+
+        <div id="login" style="display: none;">
+            <h2>Login</h2>
+            <input type="text" id="loginUsername" placeholder="Username">
+            <input type="password" id="loginPassword" placeholder="Password">
+            <button id="loginButton">Login</button>
+        </div>
+
+        <div id="availableDoctors" style="display: none;">
+            <h2>Available Doctors</h2>
+            <ul id="doctorList"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
