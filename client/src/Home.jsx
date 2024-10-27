@@ -17,7 +17,7 @@ export default function LandingPage() {
             <div className="hidden md:flex space-x-8">
               <NavLink to="/symp">Quick Help</NavLink>
               <NavLink to="/chat">Chatrooms</NavLink>
-              <NavLink to="/remind">Contact Us</NavLink>
+              <NavLink to="/remind">Reminders</NavLink>
             </div>
             <div className="hidden md:flex space-x-4">
               <Link to="/" className="text-white hover:text-red-400 transition duration-300 flex items-center">
